@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   font-family: poppins;
@@ -201,8 +203,11 @@ color: white;
 }
 
 /* responsivenes on each device */
-/* -------- Tablets (≤1024px) -------- */
+/* ===============================
+   TABLETS (≤1024px)
+================================ */
 @media (max-width: 1024px) {
+
   header {
     flex-direction: column;
     align-items: center;
@@ -212,34 +217,49 @@ color: white;
     transform: none;
     margin-top: 10px;
   }
-ul{
-  margin-left: 50px;
-}
+
+  ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .title,
   .continue {
-    font-size: 50px;
+    font-size: 48px;
+    margin-left: 30px;
+  }
+
+  .subtitle,
+  .shop {
+    margin-left: 30px;
   }
 
   .image1 {
-    margin-left: 500px;
-    margin-right: auto;
-    transform: translateY(-310px);
+    margin: 40px auto 0;
+    display: block;
+    transform: none;
     width: 260px;
   }
 
   .section1 {
+    transform: none;
     justify-content: center;
     gap: 30px;
-    transform: translateY(-120px);
+    flex-wrap: wrap;
+    text-align: center;
   }
 
-  .part1,
-  .part2 {
-    padding-right: 60px;
+  .part1, .part2 {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .part2, .part3 {
+    padding-left: 0;
   }
 
   .images-viewport {
-    width: 600px;
+    width: 90%;
   }
 
   .layer {
@@ -249,49 +269,35 @@ ul{
   }
 
   #contacts {
-    padding-left: 150px;
+    padding-left: 120px;
   }
-.subtitle{
-  transform: translateX(10px);
-}
-.shop{
-  transform: translateX(10px);
-}
 }
 
-
-
-/* -------- Phones (≤768px) -------- */
+/* ===============================
+   PHONES (≤768px)
+================================ */
 @media (max-width: 768px) {
 
   header {
-    align-items: center;
     text-align: center;
   }
 
   ul {
-    gap: 18px;
-    text-align: center;
-    margin-right: 70px;
-    transform: translateY(-20px);
-  }
-
-  .business {
-    margin-left: 0;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
   }
 
   .title,
   .continue {
-    font-size: 42px;
+    font-size: 38px;
     margin-left: 20px;
+    text-align: left;
   }
 
   .subtitle {
-    margin-left: 60px;
-    font-size: 16px;
-    transform: translateY(-10px);
     margin-left: 20px;
-
+    font-size: 16px;
   }
 
   .shop {
@@ -300,147 +306,67 @@ ul{
 
   .image1 {
     width: 220px;
-    display: flex;
-  transform: translatey(-250px);
+    margin: 30px auto;
   }
 
   .section1 {
     flex-direction: column;
     align-items: center;
-    transform: none;
     margin-top: 40px;
-  }
-
-
-  .images-viewport {
-    width: 90%;
-  }
-
-  .images div {
-    min-width: 180px;
+    gap: 25px;
   }
 
   .subtitle2 {
     font-size: 18px;
-    padding: 15px;
     text-align: center;
-    white-space: pre;
-  }
-
-  .layer {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 15px;
   }
 
   #contacts {
     padding-left: 20px;
     flex-direction: column;
+    align-items: flex-start;
   }
-  .section1{
-    transform:translateY(-220px) ;
-    flex-direction: row;
-    font-size: 15px;
-    
-}
 }
 
-
-/* -------- Small Phones (≤480px) -------- */
+/* ===============================
+   SMALL PHONES (≤480px)
+================================ */
 @media (max-width: 480px) {
-ul{
-  text-align: center;
-  margin-left: 280px;
-  white-space: pre;
 
-}
-.business{
-   text-align: center;
-  margin-left: 280px;
-  white-space: pre;
-}
   .title,
   .continue {
-    font-size: 34px;
+    font-size: 32px;
+    margin-left: 15px;
   }
-    .title{
-    margin-bottom: 80px;
-  }
-  .continue{
-        margin-bottom:800px;
-         margin-left: 10px;
-        transform: translateY(-40px);
 
+  .subtitle {
+    margin-left: 15px;
   }
-  .subtitle{
-    margin-left: 10px;
-            transform: translateY(-820px);
 
+  .shop {
+    margin-left: 15px;
   }
-.shop{
-              transform: translateY(-820px);
-    margin-left: 10px;
-}
-.image1{
-                transform: translateY(-1080px);
-margin-left: 350px;
-}
-  
+
+  .image1 {
+    width: 180px;
+  }
 
   .arrow {
-    font-size: 28px;
-  }
-
-  .images div {
-    min-width: 150px;
+    font-size: 26px;
   }
 
   #testimonial {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+    padding: 0 10px;
   }
-  .section1{
-transform: translateY(-890px);
-margin-left: 240px;
-font-size: 20px;
+
+  #contacts h2 {
+    font-size: 16px;
   }
-  .title2{
-    transform: translateY(-700px);
-margin-left: 200px;
-white-space: pre;
+
+  .footer {
+    font-size: 12px;
   }
-  .slider-wrapper{
-    transform: translateY(-680px);
-margin-left: 60px;
-width: 500px;
-  }
-.title3{
-  transform: translateY(-700px);
-margin-left: 140px;
-text-align: center;
-white-space: pre;
-}
-.subtitle2{
-  transform: translateY(-700px);
-margin-right: 100px;
-white-space: pre;
-text-align: left;
-}
-.title4{
-   transform: translateY(-700px);
-margin-left: 230px;
-}
-.layer{
-  transform: translateY(-700px);
-margin-left: 10px;
-width:670px;
-}
-#contacts{
- transform: translateY(-700px);
-margin-left: 230px;
-}
-.footer{
-  text-align: center;
-   transform: translateY(-500px);
-   margin-left: 230px;
-}
 }
